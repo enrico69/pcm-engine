@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Meta>
+   <Page>
+       <Uri>/Home/</Uri>
+        <Title>HomePage</Title>
+        <Description>Welcome to my book manager</Description>
+        <Keywords>books, list, collection, manager</Keywords>
+        <Index>1</Index>
+  </Page>
+   <Page>
+       <Uri>/books/</Uri>
+        <Title>List all books</Title>
+        <Description>The whole list of my books collection</Description>
+        <Keywords>books, list, collection</Keywords>
+        <Index>1</Index>
+  </Page>
+  <Page>
+       <Uri>/books/add/</Uri>
+        <Title>Add a book to my collection</Title>
+        <Description>Add a book in the collection</Description>
+        <Keywords>books, list, collection</Keywords>
+        <Index>1</Index>
+  </Page>
+</Meta>

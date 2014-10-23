@@ -1,0 +1,199 @@
+a:link {color:blue; text-decoration : none;}
+a:visited {color:blue;}
+a:active {color:blue;}
+
+/*** HEADER ***/
+
+body
+{
+    font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+    font-size:14px;
+}
+
+#conteneur-header
+{
+    width : 100%;
+    height : 125px;
+    background : #19478A;
+}
+
+#enteteHeader
+{
+   height : 100px;
+   text-align: center;
+}
+
+/* -> MENU */
+
+#menu-principal
+{
+    text-align: center;
+    color : white;
+    height : 25px;
+
+    background: #a90329; /* Old browsers */
+    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+}
+
+#conteneurMenu
+{
+    width : 1050px;
+    height : 25px;
+    margin:auto;
+}
+
+#conteneurMenu ul /*Gestion des listes de ce conteneur donc niveau 1 */
+{
+    list-style-type : none;
+}
+
+.menulist
+{
+    width : 100px;
+    float : left;
+    padding-top: 3px;
+    border-radius: 5px 5px 0 0;
+}
+
+.menulist a:link {color:white; text-decoration: none;}
+.menulist a:visited {color:white; text-decoration : underline;}
+.menulist a:active {color:white; text-decoration : underline;}
+
+
+.menulist ul /*Menu déroulant */
+{
+    list-style-type :none;
+    visibility : hidden;
+    background-color:black;
+    position: absolute;
+    width:100px;
+    padding:0;
+}
+
+.menulist:hover
+{
+    background-color: white;
+    color : #8f0222;
+}
+
+.menulist:hover a:link {color:#8f0222; text-decoration: none;}
+.menulist:hover a:visited {color:#8f0222; text-decoration : underline;}
+.menulist:hover a:active {color:#8f0222; text-decoration : underline;}
+
+.menulist:hover ul
+{
+    visibility: visible;
+}
+
+.menulist:hover ul a:link {color:white; text-decoration: none;}
+.menulist:hover ul a:visited {color:white; text-decoration : underline;}
+.menulist:hover ul a:active {color:white; text-decoration : underline;}
+
+.menulist ul li:hover
+{
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #8f0222;
+}
+
+.menulist ul li:hover a:link {color:white; text-decoration: none;}
+.menulist ul li:hover a:visited {color:white; text-decoration : underline;}
+.menulist ul li:hover a:active {color:white; text-decoration : underline;}
+
+
+/* - FIN MENU */
+
+/********* FIN HEADER *************************************************/
+
+/*********** CONTENU ***************/
+
+#divDeContenu
+{
+    width : 1050px;
+    margin : auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#divDeContenu a:link {color:blue;}
+#divDeContenu a:visited {color:blue;}
+#divDeContenu a:hover {color:orange;}
+#divDeContenu a:active {color:white;}
+
+/******* FIN CONTENU ****************/
+
+/************* HOME ***********************************/
+
+#contenuHome
+{
+    width : 1000px;
+    height : 540px;
+    margin : auto;
+}
+
+.caseContenuHome
+{
+    float : left;
+    margin-left: 10px;
+    margin-top : 10px;
+    width : 485px;
+    height : 275px;
+    
+    -moz-box-shadow: 5px 5px 5px 0px #656565;
+    -webkit-box-shadow: 5px 5px 5px 0px #656565;
+    -o-box-shadow: 5px 5px 5px 0px #656565;
+    box-shadow: 5px 5px 5px 0px #656565;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
+    
+    background-color: #cccccc;
+}
+
+.TitleCaseHome
+{
+    color : white;
+    font-weight: bold;
+    text-align: center;
+    
+    background: #2c539e; /* Old browsers */
+    background: -moz-linear-gradient(top, #2c539e 0%, #2c539e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2c539e), color-stop(100%,#2c539e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #2c539e 0%,#2c539e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #2c539e 0%,#2c539e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #2c539e 0%,#2c539e 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #2c539e 0%,#2c539e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#2c539e',GradientType=0 ); /* IE6-9 */
+}
+/*********** FIN HOME **************/
+
+
+/** Gallery *****/
+
+#large {
+    display: none;
+    position: absolute;
+    background: #FFFFFF;
+    padding: 5px;
+    z-index: 10;
+    min-height: 200px;
+    min-width: 200px;
+    color: #336699;
+}
+#background{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000000;
+    z-index: 1;
+}
+
+/*** Fin gallery ******/

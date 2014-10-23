@@ -1,0 +1,1 @@
+Error : Email can't be send!
