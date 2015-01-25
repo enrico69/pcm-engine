@@ -16,25 +16,30 @@ abstract class engine_DbConnectors_AbstractType {
         return ($Name);
     }
 
-    protected abstract function Connexion($Host, $Base, $Id, $Psswd);
+    public abstract function tableInfos($tableName);
 
-    public abstract function Read($typeObject, $theRequest);
+    protected abstract function connexion($Host, $Base, $Id, $Psswd);
 
-    public abstract function Write($Object, $theRequest);
-    
-    public abstract function Save($Object, $Type);
-    
-    public abstract function First($typeObject, $Qty="");
+    public abstract function rawReading($request);
 
-    public abstract function Last($typeObject, $Qty="");
+    public abstract function read($theRequest, $typeObject);
 
-    public abstract function Find($Id, $typeObject);
-    
-    public abstract function Delete($Id, $typeObject);
-    
+    public abstract function write($theRequest, $Object);
+
+    public abstract function save($Object, $Type);
+
+    public abstract function first($typeObject, $Qty = "");
+
+    public abstract function last($typeObject, $Qty = "");
+
+    public abstract function find($Id, $typeObject);
+
+    public abstract function delete($Id, $typeObject);
+
     public abstract function selectAll($typeObject);
 
     protected abstract function createRequest($statut, $object, $typeObject);
 }
+
 
 ?>

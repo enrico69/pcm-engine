@@ -40,8 +40,7 @@ No. As said previously, it is an engine. However, for some projets, I developped
 is the third URL managing system with the empty file to be implemented (see above).
 
 = Where can I find some documentation ? =
-Currently : nowhere. But it should come soon, with a forum. On the other hand, opening abstract classes should answers a lot
-of questions...
+Just here, on this GitHub repository. 
 You can also contact me by email!
 
 = Contact =
@@ -50,3 +49,4 @@ Email : e.courtial [at] hotmail.fr
 = Licence =
 Do whatever you want with this stuff, but I am not responsible if you destroy the planet earth.
 Just send me an email if you select this solution for you project, to see how I can improve it based on you work.
+By the way : MIT licence

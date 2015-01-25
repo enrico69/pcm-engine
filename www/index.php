@@ -1,6 +1,4 @@
 <?php
-header('Content-Type: text/html; charset=UTF-8');
-
 chdir(__DIR__ . '/../');
 
 function __autoload($class_name) { //automatic loading of the needed classes
@@ -16,6 +14,6 @@ function __autoload($class_name) { //automatic loading of the needed classes
     }
 }
 
-$GLOBALS['Application'] = new engine_Application();
-$GLOBALS['Application']->start();
+$Application = new engine_Application();
+$Application->start();
 ?>

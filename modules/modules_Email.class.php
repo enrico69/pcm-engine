@@ -2,20 +2,23 @@
 
 class modules_Email {
 
-    public function sendEmail($TO, $From, $Message, $Sujet) {
-        if(is_array($TO)){
+    public function sendEmail($TO, $From, $Message, $Sujet, $h = "") {
+        if (is_array($TO)) {
             $tempTO = "";
             foreach ($TO as $value) {
-                $tempTO = $value.";";
+                $tempTO = $value . ";";
             }
             $TO = $tempTO;
         }
-        
-        $h = "From: " . $From;
-        if(mail($TO, $Sujet, $Message, $h)){
+
+        if ($h == "") {
+            $h = "From: " . $From;
+        }
+        if (mail($TO, $Sujet, $Message, $h)) {
             return true;
-        }else{
+        } else {
             return false;
-        } 
+        }
     }
+
 }

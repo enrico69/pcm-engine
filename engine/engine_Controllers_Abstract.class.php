@@ -8,9 +8,8 @@ abstract class engine_Controllers_Abstract {
     protected $moduleMeta = "";
     private $thePage = "";
     protected $Error = "";
-    private $Shortcuts = "";
-    
-    
+    protected $Shortcuts = "";
+    protected $Helpers = "";
 
     public function __construct($Request = "") {
         $this->verifURL = new engine_VerifURL();
@@ -18,6 +17,7 @@ abstract class engine_Controllers_Abstract {
         $this->moduleMeta = new modules_readMetas();
         $this->Error = new controllers_Error();
         $this->Shortcuts = new engine_Shortcuts();
+        $this->Helpers = new engine_Helpers();
         
         if (empty($Request)) {
             $this->urlRequested = "index";
@@ -33,27 +33,17 @@ abstract class engine_Controllers_Abstract {
         }
         if (method_exists($this, $theRequest)) {
             $response = $this->$theRequest();
-            $this->thePage->Display($response['view'], $response['meta']);
+            $this->thePage->display($response['view'], $response['meta']);
         } else {
             $this->Error->start("Page not found!", "404");
         }
     }
     
-    protected function detailArray($data){
-        echo "<br/>";
-        echo "<pre>";
-        echo print_r($data);
-        echo "</pre>";
-        echo "<br/>";
-    }
-    
-    protected function goHome(){
-        header('Status: 301 Moved Permanently', false, 301);      
+    protected function goHome(){ 
         header('Location: '.$this->Shortcuts->gethomeURL());
     }
     
-    protected function redirect($where){
-        header('Status: 301 Moved Permanently', false, 301);      
+    protected function redirect($where){    
         header('Location: '.$where);
     }
 

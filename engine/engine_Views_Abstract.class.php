@@ -1,6 +1,6 @@
 <?php
 
-abstract class Engine_Views_Abstract {
+abstract class engine_Views_Abstract {
 
     protected $content = "";
     protected $theView = "";

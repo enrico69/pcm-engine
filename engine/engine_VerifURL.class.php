@@ -5,9 +5,12 @@ class engine_VerifURL {
     private $URI = "/";
     private $arrayURI = array();
     private $URILength = 0;
+    private $Shortcuts = null;
 
     public function __construct() {
-        $urlSite = explode("/", addslashes($GLOBALS['Application']->getUrlSite()));
+        $this->Shortcuts = new engine_Shortcuts();
+        
+        $urlSite = explode("/", addslashes($this->Shortcuts->getUrlSite()));
         $serverURI = explode("/", addslashes($_SERVER['REQUEST_URI']));
 
         $lastPartOfUrlSite = count($urlSite);

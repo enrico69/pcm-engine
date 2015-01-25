@@ -11,13 +11,10 @@
         <script src="<?php echo $this->Shortcuts->getUrlSite().'scripts/jquery-2.1.0.min.js';?>"></script>
     </head>
     <body>
-        <div id='conteneur-header'>
-            <div id='enteteHeader'><a href="<?php echo $this->Shortcuts->getUrlSite();?>"><img src="<?php echo $this->Shortcuts->getUrlSite();?>images/head.png"/></a></div>
-            <div id='menu-principal'>
+        <div id='menu-principal'>
                 <div id="conteneurMenu">
                     <?php include 'views/templates/viewMenu.php';?>
                 </div>    
-            </div>
         </div>
         <div id='divDeContenu'>
         <?php echo $theView; ?>

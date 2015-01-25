@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Meta>
-   <Page>
-       <Uri>/books/</Uri>
+    <!-- EXEMPLE :
+    <Page>
+        <Uri>/books/</Uri>
         <Controler>Books</Controler>
         <Method>index</Method>
         <Get>false</Get>
-  </Page>
-  <Page>
-       <Uri>/books/add/</Uri>
-        <Controler>Books</Controler>
-        <Method>add</Method>
-        <Get>false</Get>
-  </Page>
-  <Page>
-       <Uri>/contact/</Uri>
-        <Controler>Contact</Controler>
-        <Method>index</Method>
-        <Get>false</Get>
-  </Page>
+    </Page>
+    -->
 </Meta>

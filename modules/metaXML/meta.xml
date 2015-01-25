@@ -21,4 +21,11 @@
         <Keywords>books, list, collection</Keywords>
         <Index>1</Index>
   </Page>
+  <Page>
+       <Uri>/books/details/</Uri>
+        <Title>Details of a book of my collection</Title>
+        <Description>Detail a book in the collection</Description>
+        <Keywords>books, list, collection</Keywords>
+        <Index>1</Index>
+  </Page>
 </Meta>

@@ -9,7 +9,7 @@ class views_Page {
         $this->Shortcuts = new engine_Shortcuts();
     }
 
-    public function Display($theView, $pageMeta) {
+    public function display($theView, $pageMeta) {
         ob_start();
         include ('views/templates/layout.php');
         $this->HTMLContent = ob_get_clean();
