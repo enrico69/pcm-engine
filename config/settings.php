@@ -1,6 +1,6 @@
 <?php
 
-/* pcm-engine Version 1.1 - Eric COURTIAL */
+/* pcm-engine Version 1.2 - Eric COURTIAL */
 /* Global parameters */
 
 $siteTitle = "My Cool web Site";
