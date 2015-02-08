@@ -34,7 +34,7 @@ $urlMode = 0;
 /* * ************************ */
 
 /* is DB required  : 0 = No 1 = Yes */
-$dbRequired = 0;
+$dbRequired = 1;
 /* * ************************ */
 
 /* granted IP (recommanded in dev mod, but usable when you want) */
