@@ -23,8 +23,6 @@ abstract class engine_DbFunctions_Abstract {
             $this->theDB = $Db;
         }
     }
-    
-    /***************Methods used for reading/writing objects in to the databse ***************************************/
 
     protected function discoverType() {
         if ($this->theType == "") {
@@ -60,52 +58,25 @@ abstract class engine_DbFunctions_Abstract {
         return $this->theDB->selectAll($this->discoverType());
     }
 
-    public function readObject($Request, $typeObject = "", $bindValues = "") {
+    public function read($Request, $typeObject = "") {
         if ($typeObject == "") {
             $typeObject = $this->discoverType();
         }
-        return $this->theDB->readObject($Request, $typeObject, $bindValues);
+        return $this->theDB->Read($Request, $typeObject);
     }
 
-    public function writeObject($Request, $Object) {
+    public function write($Request, $Object="") {
         return $this->theDB->Write($Request, $Object);
     }
-
-    //Methods use for direct reading/writing
     
-    public function directReading($theRequest){
-        return $this->theDB->directReading($theRequest);
+    public function rawReading($theRequest){
+        return $this->theDB->rawReading($theRequest);
     }
-    
-    public function directWriting($theRequest){
-        return $this->theDB->directWriting($theRequest);
-    }
-    
-    // Reading / Writing non objetcs 
-    public function write($sqlRequest, $bindValues){
-        return $this->theDB->write($sqlRequest, $bindValues);
-    }
-    public function read($sqlRequest, $bindValues){
-        return $this->theDB->read($sqlRequest, $bindValues);
-    }
-    
-    //Others methods
     
     public function tableInfos($tableName){
         return $this->theDB->tableInfos($tableName);
     }
-    
-    public function startTransaction(){
-        return $this->theDB->startTransaction();
-    }
-    
-    public function endTransaction(){
-        return $this->theDB->endTransaction();
-    }
 
-    public function cancelTransaction(){
-        return $this->theDB->cancelTransaction();
-    }
     
 }
 
