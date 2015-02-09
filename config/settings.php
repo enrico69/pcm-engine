@@ -1,6 +1,6 @@
 <?php
 
-/* pcm-engine Version 1.3.1 - Eric COURTIAL */
+/* pcm-engine Version 1.2 - Eric COURTIAL */
 /* Global parameters */
 
 $siteTitle = "My Cool web Site";
@@ -34,11 +34,11 @@ $urlMode = 0;
 /* * ************************ */
 
 /* is DB required  : 0 = No 1 = Yes */
-$dbRequired = 0;
+$dbRequired = 1;
 /* * ************************ */
 
-/* granted IP (recommended in dev mod, but usable when you want) */
-$grantedIP = array('*'); //Separate granted IPs with comma ','. Or  '*' = all IPs granted
+/* granted IP (recommanded in dev mod, but usable when you want) */
+$grantedIP = array('*'); //Sperate granted IPs with comma ','. Or  '*' = all IPs granted
 
 /* All your personnal parameters : key=>value */
 $persoParams = array();
