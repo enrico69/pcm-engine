@@ -40,7 +40,7 @@ abstract class engine_Controllers_Abstract {
     }
     
     protected function goHome(){ 
-        header('Location: '.$this->Shortcuts->gethomeURL());
+        header('Location: '.$this->Shortcuts->getUrlSite());
     }
     
     protected function redirect($where){    
