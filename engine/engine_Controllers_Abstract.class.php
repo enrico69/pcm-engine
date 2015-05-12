@@ -10,6 +10,7 @@ abstract class engine_Controllers_Abstract {
     protected $Error = "";
     protected $Shortcuts = "";
     protected $Helpers = "";
+    protected $vendorLoader = "";
 
     public function __construct($Request = "") {
         $this->verifURL = new engine_VerifURL();
@@ -18,6 +19,7 @@ abstract class engine_Controllers_Abstract {
         $this->Error = new controllers_Error();
         $this->Shortcuts = new engine_Shortcuts();
         $this->Helpers = new engine_Helpers();
+        $this->vendorLoader = new modules_Vendor_Loader();
         
         if (empty($Request)) {
             $this->urlRequested = "index";
@@ -45,6 +47,10 @@ abstract class engine_Controllers_Abstract {
     
     protected function redirect($where){    
         header('Location: '.$where);
+    }
+    
+    protected function getVendor($className) {
+        return $this->vendorLoader->includeClass($className);
     }
 
     abstract protected function index();
