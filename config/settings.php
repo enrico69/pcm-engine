@@ -4,7 +4,7 @@
 /* Global parameters */
 
 $siteTitle = "My Cool web Site";
-$urlSite = "http://pcm-engine.dev/"; //Don't forget the slash "/" at the end
+$urlSite =  'http://' . $_SERVER['HTTP_HOST'] . '/'; //Don't forget the slash "/" at the end
 
 /* Email Admin */
 $adminEmail = "";
