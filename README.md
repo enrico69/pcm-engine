@@ -1,5 +1,7 @@
 NO LONGER SUPPORTED
 
+This little framework was developped from 2010 to 2014 to run in a specific environment running with PHP 5.2... so the last version without the namespaces, a feature which completely changed the way to program in PHP. So pcm-engine has not been updated for two years now (the commits are just minor forgotten updates). This is very old stuff now.
+
 pcm-engine
 ==========
 
